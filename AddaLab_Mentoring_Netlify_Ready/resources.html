@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AddaLab — Open Learning Resources</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Noto+Sans+Bengali:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-night:#10142A; --bg-night-2:#171C38;
+    --paper:#F5F0E3; --paper-2:#EDE6D3;
+    --ink:#1E2233; --ink-soft:#4B4F63;
+    --gold:#E8B23D; --gold-soft:#F3D089;
+    --teal:#4B9E97; --line:rgba(30,34,51,0.14);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Work Sans',sans-serif;-webkit-font-smoothing:antialiased;}
+  .top{background:linear-gradient(180deg,var(--bg-night) 0%, var(--bg-night-2) 100%);color:var(--paper);padding:56px 24px 70px;text-align:center;}
+  .top .eyebrow-bn{font-family:'Noto Sans Bengali',sans-serif;color:var(--gold-soft);font-weight:600;margin:0 0 6px;}
+  .top h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(2rem,5vw,3rem);margin:0 0 14px;}
+  .top p{max-width:560px;margin:0 auto;color:#D9DAE8;line-height:1.6;font-size:1.05rem;}
+  .sheet{background:var(--paper);border-radius:24px 24px 0 0;margin-top:-36px;position:relative;padding:50px 24px 0;}
+  main{max-width:880px;margin:0 auto;padding-bottom:60px;}
+  .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:56px;}
+  .principle{background:var(--paper-2);border-radius:14px;padding:20px;text-align:center;}
+  .principle h3{font-size:0.95rem;margin:0 0 6px;color:var(--ink);}
+  .principle p{font-size:0.85rem;color:var(--ink-soft);margin:0;line-height:1.5;}
+  h2{font-family:'Fraunces',serif;font-weight:600;font-style:italic;font-size:1.6rem;margin:0 0 8px;}
+  .section-intro{color:var(--ink-soft);max-width:640px;line-height:1.7;margin:0 0 26px;}
+  table{width:100%;border-collapse:collapse;margin-bottom:12px;}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);font-size:0.92rem;}
+  th{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--teal);font-weight:600;}
+  td.wk{font-weight:600;color:var(--gold);white-space:nowrap;}
+  .source-tag{display:inline-block;font-size:0.75rem;background:var(--paper-2);border-radius:999px;padding:3px 10px;color:var(--ink-soft);}
+  .locked{display:inline-flex;align-items:center;gap:4px;font-size:0.82rem;color:var(--ink-soft);opacity:0.75;}
+  .attribution-box{background:var(--paper-2);border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 24px;margin:40px 0;font-size:0.9rem;color:var(--ink-soft);line-height:1.7;}
+  .attribution-box b{color:var(--ink);}
+  .attribution-box a{color:var(--teal);}
+  section{margin-bottom:56px;}
+  footer{text-align:center;padding:30px 24px 44px;color:var(--ink-soft);font-size:0.85rem;}
+  footer a{color:var(--ink-soft);}
+  @media (max-width:640px){
+    .principles{grid-template-columns:1fr;}
+    table, thead, tbody, th, td, tr{display:block;}
+    thead{display:none;}
+    tr{border-bottom:1px solid var(--line);padding:12px 0;}
+    td{border:none;padding:2px 0;}
+    td.wk{color:var(--gold);}
+  }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <a href="/" style="text-decoration:none;"><p class="eyebrow-bn">আড্ডা ল্যাব</p></a>
+  <h1>Cohort 1 Curriculum</h1>
+  <p>Here's the full 10-week path — from your first line of Python to a finished machine learning project. Each workshop is booked and paid for individually, one at a time, so you only commit to what's next.</p>
+</div>
+
+<div class="sheet"><main>
+
+  <div class="principles">
+    <div class="principle"><h3>Pay per workshop</h3><p>No big upfront commitment — pay only for the next session as you go.</p></div>
+    <div class="principle"><h3>Project-based</h3><p>Every module builds toward one real, working ML project.</p></div>
+    <div class="principle"><h3>Built for beginners</h3><p>No prior ML background assumed — just curiosity and basic coding.</p></div>
+  </div>
+
+  <section>
+    <h2>The Cohort 1 Curriculum</h2>
+    <p class="section-intro">A 10-week path from your first line of Python to a finished machine learning project — ending with a publication in hand. Below is the full week-by-week structure.</p>
+
+    <table>
+      <thead><tr><th>Week</th><th>Topic</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr><td class="wk">01</td><td>Python & data basics</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+        <tr><td class="wk">02</td><td>NumPy, Pandas & data wrangling</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+        <tr><td class="wk">03</td><td>Intro to machine learning & first models</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+        <tr><td class="wk">04</td><td>Linear models & gradient descent</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+        <tr><td class="wk">05</td><td>Midpoint — project topic selection</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+        <tr><td class="wk">06</td><td>Neural networks from scratch</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+        <tr><td class="wk">07</td><td>Optimization & avoiding overfitting</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+        <tr><td class="wk">08</td><td>Building your project — part 1</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+        <tr><td class="wk">09</td><td>Building your project — part 2</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+        <tr><td class="wk">10</td><td>Capstone presentation & publication write-up</td><td><span class="locked">🔒 Unlocks on booking</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>How booking works</h2>
+    <p class="section-intro">Each workshop is booked and paid for individually — one session at a time. Full lesson details, materials, and joining instructions for a given week unlock once that week is booked. This keeps your commitment small and flexible: come as far as you'd like, one workshop at a time.</p>
+    <div style="text-align:center; margin-top:24px;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdt62RvfNZaC1agsnhz81k8Bf5UkVswMl30OeSfcbDd22faoQ/viewform?usp=publish-editor" target="_blank" rel="noopener" style="display:inline-block; background:var(--gold); color:#1B1300; font-weight:600; padding:14px 28px; border-radius:999px; text-decoration:none;">Book Week 1 — Join Cohort 1</a>
+    </div>
+  </section>
+
+</main></div>
+
+<footer>
+  © 2026 AddaLab · Dhaka, Bangladesh · <a href="https://www.facebook.com/profile.php?id=61591708600471" target="_blank" rel="noopener">Facebook</a> · <a href="https://wa.me/8801822604437">WhatsApp</a>
+</footer>
+
+</body>
+</html>
